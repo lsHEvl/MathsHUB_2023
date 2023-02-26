@@ -190,13 +190,31 @@ const eventFunc = (e) => {
 for (let i = 0; i < choosedEl.length; i++) {
     choosedEl[i].addEventListener("click", eventFunc)
 }
-choosedEl[2].removeEventListener("click", eventFunc)
-userAnswer.addEventListener("keydown", (e) => {
-    // console.log(e)
-    if (e.key === "Enter") {
-        startGameFunc()   
-    } else if (e.key === "Escape") {
-        userAnswer.blur()
-    }
-})
+// choosedEl[2].removeEventListener("click", eventFunc)
+// userAnswer.addEventListener("keydown", (e) => {
+//     // console.log(e)
+//     if (e.key === "Enter") {
+//         startGameFunc()   
+//     } else if (e.key === "Escape") {
+//         userAnswer.blur()
+//     }
+// })
 
+const timeIsOver = () => {
+    alert ("Время вышло!")
+}
+// setTimeout(timeIsOver, 2000)
+
+//const alarm = setInterval(timeIsOver, 3000)
+
+let wantToSleep = confirm("Хотите ли вы спать?")
+
+const alarm = setInterval(() => {
+    if (whantToSleep) {
+        console.log("tic")
+    } else {
+        clearInterval(alarm)
+    }
+}, 3000)
+
+//clearInterval(alarm)

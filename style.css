@@ -8,17 +8,26 @@ font-family: 'Mynerve', cursive;
 
 header {
     background-color: lightblue;
-    height: 100px;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
 }
 nav {
     height: inherit;
+    width: inherit;
     display: flex;
     align-items: center;
 }
 nav > a {
     text-decoration: none;
     color: black;
-    padding: 0 100px;
+    font-size: 20px;
+    padding: 0 30px;
+}
+
+nav > a:hover {
+    color: gray;
 }
 
 img {
@@ -27,8 +36,9 @@ img {
 span {
     font-size: 20px;
 }
-.sity {
-    color: forestgreen;
+
+main {
+    margin-top: 100px;
 }
 .about_us {
     display: flex;
@@ -43,10 +53,12 @@ span {
 }
 .about_us-description {
     flex-direction: column;
+
 }
 
 .about_us-description * {
     padding: 100px;
+    
 }
 
 .my_game {
@@ -55,7 +67,7 @@ span {
     justify-content: center;
     align-items: center;
     max-width: 200px;
-    margin:auto
+    margin:auto;
 }
 .my_game > * {
     text-align: center;
@@ -105,4 +117,18 @@ span {
 .choosed_element {
 border: 3px solid black;
 
+}
+
+.posts_block {
+    max-width: 600px;
+    margin: 20px auto;
+}
+.posts_block h2 {
+    text-align: center;
+}
+.posts_block-container > * {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blanchedalmond;
 }

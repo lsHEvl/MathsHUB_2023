@@ -258,32 +258,6 @@ function getPosts() {
         })
         .catch(err => console.log(err.message))
 }
-
-// function createPost(title, body, userId) {
-//     fetch("https://jsonplaceholder.typicode.com/posts", {
-//         method: `POST`,
-//         body: JSON.stringify({
-//             // title: title,
-//             // body: body,
-//             // userId: userId,
-//             title,
-//             body,
-//             userId,
-//         }),
-//         headers: {
-//             'Content-type': 'application/json; charset=UTF-8'
-//         },
-//     })
-//         .then(res => {
-//             console.log(res)
-//         })
-//         .catch(err => console.log(err.message))
-// }
-
-// createPost("title", "body", 15)
-
-
-// showPostsBTN.onclick = () => {getPosts()}
 getPosts()
 
 
